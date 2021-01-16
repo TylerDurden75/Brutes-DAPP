@@ -1,0 +1,11 @@
+.Card {
+    max-width: 280px;
+    width: 100%;
+    overflow: hidden;
+    height: 570px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 15px;
+    border: 1px outset black;
+    margin: 15px 0;
+    cursor: pointer;
+}

@@ -1,0 +1,294 @@
+{
+  "contractName": "CommonConstants",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Note: Simple contract to use as base for const vals\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/rayti/BruteFight/contracts/utils/Common.sol\":\"CommonConstants\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/rayti/BruteFight/contracts/utils/Common.sol\":{\"keccak256\":\"0x71f02e56b8ed0fced37028a6b5534a91e5c28e190a53705c4aaa18c5d32fc744\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e06a06e7a0005383978d37baf49c83b8701f62cb23922c922f05282ae03060ec\",\"dweb:/ipfs/QmcrWsAP76ErQ9CJda2GFzvdYqBicG4j8JtWrYzQxtH43L\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122024b44a8f20d5034c02cae823749eb3724fdcdd1ef6e0f859310ba36d3588cf8464736f6c63430007050033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122024b44a8f20d5034c02cae823749eb3724fdcdd1ef6e0f859310ba36d3588cf8464736f6c63430007050033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "126:330:7:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "126:330:7:-:0;;;;;",
+  "source": "//SPDX-License-Identifier: MIT\r\n\r\npragma solidity 0.7.5;\r\n\r\n/**\r\n    Note: Simple contract to use as base for const vals\r\n*/\r\ncontract CommonConstants {\r\n\r\n    bytes4 constant internal ERC1155_ACCEPTED = 0xf23a6e61; // bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))\r\n    bytes4 constant internal ERC1155_BATCH_ACCEPTED = 0xbc197c81; // bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))\r\n}\r\n",
+  "sourcePath": "C:/Users/rayti/BruteFight/contracts/utils/Common.sol",
+  "ast": {
+    "absolutePath": "/C/Users/rayti/BruteFight/contracts/utils/Common.sol",
+    "exportedSymbols": {
+      "CommonConstants": [
+        3018
+      ]
+    },
+    "id": 3019,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3010,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:22:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3011,
+          "nodeType": "StructuredDocumentation",
+          "src": "60:64:7",
+          "text": "Note: Simple contract to use as base for const vals"
+        },
+        "fullyImplemented": true,
+        "id": 3018,
+        "linearizedBaseContracts": [
+          3018
+        ],
+        "name": "CommonConstants",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 3014,
+            "mutability": "constant",
+            "name": "ERC1155_ACCEPTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 3018,
+            "src": "160:54:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3012,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "hexValue": "30786632336136653631",
+              "id": 3013,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "204:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4063915617_by_1",
+                "typeString": "int_const 4063915617"
+              },
+              "value": "0xf23a6e61"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 3017,
+            "mutability": "constant",
+            "name": "ERC1155_BATCH_ACCEPTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 3018,
+            "src": "302:60:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3015,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "302:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "hexValue": "30786263313937633831",
+              "id": 3016,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "352:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3155786881_by_1",
+                "typeString": "int_const 3155786881"
+              },
+              "value": "0xbc197c81"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3019,
+        "src": "126:330:7"
+      }
+    ],
+    "src": "34:424:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/rayti/BruteFight/contracts/utils/Common.sol",
+    "exportedSymbols": {
+      "CommonConstants": [
+        3018
+      ]
+    },
+    "id": 3019,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3010,
+        "literals": [
+          "solidity",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:22:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 3011,
+          "nodeType": "StructuredDocumentation",
+          "src": "60:64:7",
+          "text": "Note: Simple contract to use as base for const vals"
+        },
+        "fullyImplemented": true,
+        "id": 3018,
+        "linearizedBaseContracts": [
+          3018
+        ],
+        "name": "CommonConstants",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 3014,
+            "mutability": "constant",
+            "name": "ERC1155_ACCEPTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 3018,
+            "src": "160:54:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3012,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "hexValue": "30786632336136653631",
+              "id": 3013,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "204:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4063915617_by_1",
+                "typeString": "int_const 4063915617"
+              },
+              "value": "0xf23a6e61"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 3017,
+            "mutability": "constant",
+            "name": "ERC1155_BATCH_ACCEPTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 3018,
+            "src": "302:60:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 3015,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "302:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "hexValue": "30786263313937633831",
+              "id": 3016,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "352:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3155786881_by_1",
+                "typeString": "int_const 3155786881"
+              },
+              "value": "0xbc197c81"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 3019,
+        "src": "126:330:7"
+      }
+    ],
+    "src": "34:424:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2021-01-13T18:06:14.290Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "Note: Simple contract to use as base for const vals",
+    "version": 1
+  }
+}
